@@ -124,6 +124,14 @@ textarea {
     box-shadow: 0 4px 12px rgba(17, 23, 19, 0.12);
 }
 
+.nav-mobile-only {
+    display: none !important;
+}
+
+.navlinks.open .nav-mobile-only {
+    display: inline-flex !important;
+}
+
 .actions {
     display: flex;
     gap: 12px;
@@ -1052,9 +1060,7 @@ textarea {
     }
 
     .actions .btn {
-        display: inline-flex;
-        padding: 8px 14px;
-        font-size: 13px;
+        display: none;
     }
 
     .hero {
