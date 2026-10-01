@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         navLinks.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
-                if (window.innerWidth <= 1000) {
+                if (window.innerWidth <= 680) {
                     navLinks.style.display = "none";
                     navLinks.classList.remove("open");
                 }
