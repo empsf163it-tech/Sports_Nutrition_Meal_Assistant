@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Meals & Plans · FuelForm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">Fuel<em>Form</em></a>
+            <nav class="navlinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About & Contact</a>
+            </nav>
+            <div class="actions">
+                <a href="meals-plans.html" class="btn primary nav-cta active">Meals & Plans</a>
+                <button class="menu" aria-label="Open navigation">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGE HERO -->
+        <section class="section" style="padding: 60px 0 30px;">
+            <div class="container">
+                <div class="sectionhead" style="margin-bottom:0;">
+                    <div>
+                        <div class="eyebrow">FOCUSED NUTRITION IDEAS</div>
+                        <h2>Meals & Plans</h2>
+                    </div>
+                    <p>Practical meal concepts designed specifically around training moments, recovery requirements, and preparation time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5 MEAL CATEGORY CARDS -->
+        <section class="section" style="padding-top:20px;">
+            <div class="container">
+                <div class="meal-categories">
+                    <article class="meal-card">
+                        <img src="assets/images/meal-preworkout.jpg" alt="Pre-workout energy oatmeal bowl">
+                        <div class="meal-body">
+                            <span class="meal-badge">Pre-Workout</span>
+                            <h3>Bananas, Oats & Chia Bowl</h3>
+                            <p>Fast-digesting carbohydrate meal to prime muscle glycogen before intense workouts.</p>
+                            <div class="meal-meta">
+                                <span class="tag">⏱ 5 min prep</span>
+                                <span class="tag">💪 15g protein</span>
+                                <span class="tag">⚡ 420 kcal</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="meal-card">
+                        <img src="assets/images/meal-postworkout.jpg" alt="Post-workout salmon recovery plate">
+                        <div class="meal-body">
+                            <span class="meal-badge">Post-Workout</span>
+                            <h3>Salmon Recovery Plate</h3>
+                            <p>Protein-dense grilled salmon with roasted sweet potatoes and broccoli for rapid repair.</p>
+                            <div class="meal-meta">
+                                <span class="tag">⏱ 25 min prep</span>
+                                <span class="tag">💪 42g protein</span>
+                                <span class="tag">⚡ 620 kcal</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="meal-card">
+                        <img src="assets/images/hero-food.png" alt="Everyday chicken power bowl">
+                        <div class="meal-body">
+                            <span class="meal-badge">Everyday Meals</span>
+                            <h3>Chicken Power Bowl</h3>
+                            <p>Balanced lunch with brown rice, lean chicken breast, avocado, and fresh greens.</p>
+                            <div class="meal-meta">
+                                <span class="tag">⏱ 20 min prep</span>
+                                <span class="tag">💪 45g protein</span>
+                                <span class="tag">⚡ 680 kcal</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="meal-card">
+                        <img src="assets/images/athlete-kitchen.png" alt="Rest day Greek yogurt bowl">
+                        <div class="meal-body">
+                            <span class="meal-badge">Rest Day</span>
+                            <h3>Greek Yogurt & Berry Bowl</h3>
+                            <p>High-protein snack with honey, almonds, and antioxidants to support recovery on rest days.</p>
+                            <div class="meal-meta">
+                                <span class="tag">⏱ 5 min prep</span>
+                                <span class="tag">💪 28g protein</span>
+                                <span class="tag">⚡ 380 kcal</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="meal-card">
+                        <img src="assets/images/product-overview.png" alt="Quick high protein wrap">
+                        <div class="meal-body">
+                            <span class="meal-badge">Quick Meals</span>
+                            <h3>High-Protein Energy Wrap</h3>
+                            <p>Whole wheat wrap stuffed with sliced turkey breast, spinach, and hummus for busy days.</p>
+                            <div class="meal-meta">
+                                <span class="tag">⏱ 10 min prep</span>
+                                <span class="tag">💪 32g protein</span>
+                                <span class="tag">⚡ 510 kcal</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- SIMPLE PERSONAL PLAN BUILDER -->
+                <div class="plan-builder">
+                    <div style="max-width: 600px;">
+                        <div class="eyebrow">INTERACTIVE CONCEPT</div>
+                        <h3 style="font-size: 28px; margin: 6px 0 10px; font-weight: 950;">What's your day looking like?</h3>
+                        <p style="color: var(--muted); margin: 0;">Select a day structure below to preview a practical suggested meal plan. No login or account required.</p>
+                    </div>
+
+                    <div class="plan-tabs">
+                        <button class="plan-tab-btn active" data-plan="training">Training Day</button>
+                        <button class="plan-tab-btn" data-plan="rest">Rest Day</button>
+                        <button class="plan-tab-btn" data-plan="quick">Quick & Easy</button>
+                    </div>
+
+                    <div id="plan-structure" class="day-structure">
+                        <div class="step-card">
+                            <small>07:30 · Breakfast</small>
+                            <h4>Rolled Oats & Greek Yogurt</h4>
+                            <p>Complex carbs + 28g protein to prime your morning energy.</p>
+                        </div>
+                        <div class="step-card">
+                            <small>12:30 · Lunch</small>
+                            <h4>Chicken & Quinoa Bowl</h4>
+                            <p>Lean chicken breast, quinoa, avocado, and steamed greens (45g protein).</p>
+                        </div>
+                        <div class="step-card">
+                            <small>16:30 · Pre-Workout</small>
+                            <h4>Banana, Berries & Chia</h4>
+                            <p>Fast-acting carbohydrate fuel 60-90 mins before training.</p>
+                        </div>
+                        <div class="step-card">
+                            <small>20:00 · Post-Workout Dinner</small>
+                            <h4>Grilled Salmon & Potatoes</h4>
+                            <p>Protein recovery plate with roasted sweet potatoes & broccoli (42g protein).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TODAY'S MEAL SCHEDULE & PLANNER SECTION -->
+        <section id="today-schedule" class="section" style="background: rgba(255,255,255,0.02); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container">
+                <div class="sectionhead">
+                    <div>
+                        <div class="eyebrow">DAILY MEAL SCHEDULE</div>
+                        <h2>Meal Planner & Quick Swaps</h2>
+                    </div>
+                    <p>Organize your daily intake around your workouts. Easily swap meals if your schedule or food preferences change.</p>
+                </div>
+
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <div class="schedule-time">
+                            <span>07:30 AM</span>
+                            <small>Breakfast</small>
+                        </div>
+                        <div class="schedule-details">
+                            <h4 id="meal-breakfast-title">Rolled Oats & Berry Bowl</h4>
+                            <p id="meal-breakfast-desc">50g Oats + 200g Greek Yogurt + Honey + 15g Chia Seeds (320 kcal, 28g Protein)</p>
+                        </div>
+                        <button class="btn soft swap-btn" onclick="swapMeal('breakfast')">🔄 Swap Meal</button>
+                    </div>
+
+                    <div class="schedule-card">
+                        <div class="schedule-time">
+                            <span>12:30 PM</span>
+                            <small>Lunch</small>
+                        </div>
+                        <div class="schedule-details">
+                            <h4 id="meal-lunch-title">Chicken Breast & Quinoa Bowl</h4>
+                            <p id="meal-lunch-desc">180g Chicken Breast + 150g Quinoa + Avocado + Steamed Broccoli (680 kcal, 45g Protein)</p>
+                        </div>
+                        <button class="btn soft swap-btn" onclick="swapMeal('lunch')">🔄 Swap Meal</button>
+                    </div>
+
+                    <div class="schedule-card">
+                        <div class="schedule-time">
+                            <span>04:30 PM</span>
+                            <small>Pre-Workout</small>
+                        </div>
+                        <div class="schedule-details">
+                            <h4 id="meal-pre-title">Banana & Almond Butter Toast</h4>
+                            <p id="meal-pre-desc">1 Large Banana + 2 Slices Sourdough + 15g Almond Butter (380 kcal, 14g Protein)</p>
+                        </div>
+                        <button class="btn soft swap-btn" onclick="swapMeal('preworkout')">🔄 Swap Meal</button>
+                    </div>
+
+                    <div class="schedule-card">
+                        <div class="schedule-time">
+                            <span>08:00 PM</span>
+                            <small>Post-Workout</small>
+                        </div>
+                        <div class="schedule-details">
+                            <h4 id="meal-post-title">Salmon & Sweet Potato Recovery Plate</h4>
+                            <p id="meal-post-desc">200g Salmon Fillet + 200g Sweet Potato + Roasted Asparagus (620 kcal, 42g Protein)</p>
+                        </div>
+                        <button class="btn soft swap-btn" onclick="swapMeal('postworkout')">🔄 Swap Meal</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRESS & RECOVERY DASHBOARD SECTION -->
+        <section id="progress-recovery" class="section">
+            <div class="container">
+                <div class="sectionhead">
+                    <div>
+                        <div class="eyebrow">ATHLETE INSIGHTS</div>
+                        <h2>Progress & Recovery Dashboard</h2>
+                    </div>
+                    <p>Monitor your weekly habit consistency, fluid recovery targets, and overall nutritional adherence.</p>
+                </div>
+
+                <div class="recovery-dashboard">
+                    <div class="progress-grid">
+                        <div class="progress-card">
+                            <small>WEEKLY NUTRITION CONSISTENCY</small>
+                            <h3 style="font-size:36px; margin:6px 0; color:var(--lime);">89%</h3>
+                            <div class="progress" style="margin-bottom:8px;"><i style="width:89%; background:var(--lime);"></i></div>
+                            <p style="font-size:13px; color:var(--muted); margin:0;">High consistency state across 7 days</p>
+                        </div>
+
+                        <div class="progress-card">
+                            <small>DAILY HYDRATION AVERAGE</small>
+                            <h3 style="font-size:36px; margin:6px 0; color:#3b82f6;">2.7 / 3.0 L</h3>
+                            <div class="progress" style="margin-bottom:8px;"><i style="width:90%; background:#3b82f6;"></i></div>
+                            <p style="font-size:13px; color:var(--muted); margin:0;">Optimal fluid & electrolyte balance</p>
+                        </div>
+
+                        <div class="progress-card">
+                            <small>PLANNED MEALS ON-TRACK</small>
+                            <h3 style="font-size:36px; margin:6px 0; color:var(--fg);">18 / 21</h3>
+                            <div class="progress" style="margin-bottom:8px;"><i style="width:85%; background:var(--fg);"></i></div>
+                            <p style="font-size:13px; color:var(--muted); margin:0;">3 flexible meal adjustments made</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:32px; border-top: 1px solid var(--border); padding-top:24px;">
+                        <h4 style="margin:0 0 12px; font-size:16px; font-weight:800; text-transform:uppercase; letter-spacing:1px; color:var(--muted);">Core Recovery Habits Checklist</h4>
+                        <div class="recovery-habits">
+                            <span class="habit-chip active">✓ 7.5h+ Quality Sleep</span>
+                            <span class="habit-chip active">✓ Post-Workout Protein within 45m</span>
+                            <span class="habit-chip active">✓ Daily Electrolyte Replacement</span>
+                            <span class="habit-chip active">✓ Active Mobility / Stretching</span>
+                            <span class="habit-chip">○ Zero Late Night Heavy Sugars</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footgrid">
+            <div>
+                <a class="brand" href="index.html">Fuel<em>Form</em></a>
+                <p>Nutrition decisions built around the way you train.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" aria-label="X (Twitter)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg></a>
+                    <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Navigation</h4>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="meals-plans.html">Meals & Plans</a></p>
+                <p><a href="about.html">About & Contact</a></p>
+            </div>
+
+            <div>
+                <h4>Contact Info</h4>
+                <p><a href="mailto:alex@fuelform.app">alex@fuelform.app</a></p>
+                <p><a href="about.html#contact">Get In Touch</a></p>
+            </div>
+
+            <div>
+                <h4>Newsletter</h4>
+                <p>Subscribe for weekly fuel guides and recovery tips.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="newsletter-input-wrap">
+                        <input type="email" placeholder="Enter your email" required aria-label="Email address">
+                        <button type="submit" class="btn primary">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container bottom">© 2026 FuelForm · Informational nutrition guidance, not medical advice.</div>
+    </footer>
+
+    <!-- MOBILE BOTTOM BAR -->
+    <div class="mobilebar">
+        <a href="index.html"><b>⌂</b>Home</a>
+        <a class="active" href="meals-plans.html"><b>▦</b>Meals & Plans</a>
+        <a href="about.html"><b>ℹ</b>About & Contact</a>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
