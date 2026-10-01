@@ -901,14 +901,20 @@ textarea {
     margin: 8px 0 14px;
 }
 
-.footer a:not(.brand) {
+.footer p a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
     color: var(--muted);
     font-size: 14px;
-    transition: color 0.2s ease;
+    font-weight: 600;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 2px 0;
 }
 
-.footer a:not(.brand):hover {
+.footer p a:hover {
     color: var(--green);
+    transform: translateX(4px);
 }
 
 .footer .brand {
@@ -916,7 +922,15 @@ textarea {
     font-weight: 950;
     letter-spacing: -1.3px;
     color: var(--ink);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer .brand:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
 }
 
 .footer h4 {
@@ -928,13 +942,17 @@ textarea {
 
 .footer .social-links a {
     background: #eaf0e8;
-    border: 0;
+    border: 1px solid transparent;
     color: var(--ink);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .social-links a:hover {
     background: var(--dark);
-    color: white;
+    color: var(--lime);
+    border-color: var(--dark);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 16px rgba(17, 23, 19, 0.15);
 }
 
 .newsletter-form {
@@ -1034,7 +1052,9 @@ textarea {
     }
 
     .actions .btn {
-        display: none;
+        display: inline-flex;
+        padding: 8px 14px;
+        font-size: 13px;
     }
 
     .hero {
@@ -1113,7 +1133,8 @@ textarea {
         color: white;
         border-radius: 19px;
         padding: 9px 6px;
-        justify-around: space-around;
+        justify-content: space-around;
+        align-items: center;
         z-index: 999;
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     }
