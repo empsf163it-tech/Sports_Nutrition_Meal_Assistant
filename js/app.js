@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
             { stage: "07:30 · Breakfast", name: "Rolled Oats & Greek Yogurt", desc: "Complex carbs + 28g protein to prime your morning energy." },
             { stage: "12:30 · Lunch", name: "Chicken & Quinoa Bowl", desc: "Lean chicken breast, quinoa, avocado, and steamed greens (45g protein)." },
             { stage: "16:30 · Pre-Workout", name: "Banana, Berries & Chia", desc: "Fast-acting carbohydrate fuel 60-90 mins before training." },
-            { stage: "20:00 · Post-Workout Dinner", name: "Grilled Salmon & Potatoes", desc: "Protein recovery plate with roasted sweet potatoes & broccoli (42g protein)." }
+            { stage: "20:00 · Post-Workout", name: "Grilled Salmon & Potatoes", desc: "Protein recovery plate with roasted sweet potatoes & broccoli (42g protein)." }
         ],
         rest: [
             { stage: "08:00 · Breakfast", name: "Veggie Omelet & Whole Toast", desc: "3 egg omelet with spinach, mushrooms, and avocado (24g protein)." },
@@ -184,6 +184,25 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             alert("Thank you for subscribing to weekly FuelForm tips!");
             newsletterForm.reset();
+        });
+    }
+
+    // 7. Back to Top Button Functionality
+    const backToTopBtn = document.getElementById("back-to-top");
+    if (backToTopBtn) {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 250) {
+                backToTopBtn.classList.add("visible");
+            } else {
+                backToTopBtn.classList.remove("visible");
+            }
+        });
+
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
     }
 });
